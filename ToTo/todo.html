@@ -11,8 +11,16 @@
             <input type="text" id="put" placeholder="What needs to be done ?  " onkeypress="add()">
             <ul class="list">
                 <li>
-                    <input type="checkbox" name="status" id="checkbox" v-model="todolist">
-                    <input type="text" name="text" id="text">
+                    <div class="view">
+                        <input type="checkbox" name="status" id="status" v-model="todolist">
+                        <label id="text">ssssssssssssssss</label>
+                        <button class="del" onclick="dele()">×</button>
+                    </div>
+                    <!-- <div class="view">
+                        <input class="toggle" type="checkbox" v-model="todo.completed">
+                        <label @dblclick="editTodo(todo)">{{ todo.title }}</label>
+                        <button class="destroy" @click="removeTodo(todo)"></button>
+                    </div> -->
                 </li>
             </ul>
         </div>

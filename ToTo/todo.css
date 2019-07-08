@@ -19,7 +19,7 @@ body{
 #bd{
     height: auto;
 }
-#bd input{
+#bd  #put{
     height: 70px;
     width: 700px;
     font-size: 40px;
@@ -27,7 +27,7 @@ body{
     color: rgb(212, 207, 207);
     box-shadow: 0 25px 35px #d5d6d8;
 }
-#bd input::-ms-input-placeholder{
+#bd  #put::-ms-input-placeholder{
     color: rgb(212, 207, 207);
 }
 #foot{
@@ -43,19 +43,38 @@ body{
 #foot p a:hover{
     text-decoration: underline ;
 }
-#bd ul li #checkbox{
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
-    margin-left: -22px;
-    margin-top: -17px;
-}
-#bd ul li #text{
-    height: 70px;
-    width: 640px;
-    border: 2px solid #a3abb1;
-    margin-top: -17px;
-}
+
 #bd ul li{
     list-style: none;
+}
+#bd ul li .view{
+    margin-top: -5px;
+    text-align: left;
+    height: 70px;
+    width: 697px;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+#bd ul li .view #text{
+    height: 500px;
+    height: 70px;
+    font-size: 50px;
+}
+#bd ul li .view #status{
+    height: 70px;
+    width: 70px;
+    margin-top: -2px;
+    margin-left: 0px;
+    border-radius: 100%;
+    position: relative;
+}
+#bd ul li .view .del{
+    height: 70px;
+    width: 70px;
+    font-size: 50px;
+    margin-left: 234.6px;
+    background: white;
+    border: 1px solid white;
+    color: red;
+    margin-top: -10px;
 }
