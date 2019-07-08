@@ -1,0 +1,61 @@
+body{
+    height: 550px;
+    width: 800px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#top{
+    font-family: "Arial";
+    font-size: 120px;
+    color: rgb(197, 133, 153);
+    font-stretch: ultra-condensed;
+}
+#top p{
+    margin-top: 50px;
+    opacity: 0.3;
+}
+#bd{
+    height: auto;
+}
+#bd input{
+    height: 70px;
+    width: 700px;
+    font-size: 40px;
+    border: 2px solid #a3abb1;
+    color: rgb(212, 207, 207);
+    box-shadow: 0 25px 35px #d5d6d8;
+}
+#bd input::-ms-input-placeholder{
+    color: rgb(212, 207, 207);
+}
+#foot{
+    margin-top: 100px;
+}
+#foot p{
+    color: darkgray;
+}
+#foot p a{
+    text-decoration: none;
+    color: darkgray;
+}
+#foot p a:hover{
+    text-decoration: underline ;
+}
+#bd ul li #checkbox{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-left: -22px;
+    margin-top: -17px;
+}
+#bd ul li #text{
+    height: 70px;
+    width: 640px;
+    border: 2px solid #a3abb1;
+    margin-top: -17px;
+}
+#bd ul li{
+    list-style: none;
+}

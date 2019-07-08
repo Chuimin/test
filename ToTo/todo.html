@@ -1,0 +1,29 @@
+<html lang="zh-cn">
+    <head>
+        <title>todolist</title>
+        <link rel="stylesheet" href="todo.css">
+    </head>
+    <body>
+        <div id="top">
+            <p>todos</p>
+        </div>
+        <div id="bd">
+            <input type="text" id="put" placeholder="What needs to be done ?  " onkeypress="add()">
+            <ul class="list">
+                <li>
+                    <input type="checkbox" name="status" id="checkbox" v-model="todolist">
+                    <input type="text" name="text" id="text">
+                </li>
+            </ul>
+        </div>
+        <div id="foot">
+            <p>Double-click to edit a todo</p>
+            <p>Written by <a href="http://evanyou.me">Evan You</a></p>
+            <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="todo.js"></script>
+</html>
+
