@@ -4,13 +4,12 @@
       <p>todos</p>
     </div>
     <div id="bd">
-        <input type="text" id="put" placeholder="What needs to be done ?  " @keyup.enter="addtext" v-model="text">
         <input type="checkbox" class="all" v-show="false">
-        <label for="all"></label>
+        <label for="all" v-show="todolist.length"></label>
+        <input type="text" id="put" placeholder="What needs to be done ?  " @keyup.enter="addtext" v-model="text">
         <ul class="list">
           <li v-for="item in todolist" v-bind:key="item.id" v-show="todolist.length">
             <div class="view">
-              <!-- v-bind:style="item.labsty" -->
               <input type="checkbox" :class="item.classname" v-bind:id="item.id" v-show="false" >
               <label v-bind:for="item.id" @click="change('status',item.id)"></label>
               <label type="text" class="text" v-bind:style="item.sty" @dblclick="look2(item.id)">{{item.text}}</label>
@@ -165,29 +164,34 @@ export default {
 }
 #bd  #put{
     height: 70px;
-    width: 700px;
+    width: 600px;
+    margin-top: 0px;
+    margin-right: -83px;
     font-size: 40px;
-    border: 2px solid #a3abb1;
+    border: 2px solid #f2f7fa;
     color: rgb(212, 207, 207);
+    background: #f2f7fa;
 }
 #bd  #put::-webkit-input-placeholder{
     color: rgb(212, 207, 207);
 }
-.all + label {
+#bd .all + label {
     display: inline-block;
-    border: 1px solid black;
-    width: 60px;
+    width: 30px;
     height: 34px;
-    font-size: 20px;
-    position: absolute;
-    top: -52px;
-    left: -13px;
+    font-size: 0px;
+    margin-top: 20px;
+    margin-right:640px;
+    transform:rotate(90deg);
 }
 .all + label:before{
     content: '❯';
     font-size: 22px;
-    color: #e6e6e6;
+    color: #8f9497;
     padding: 10px 27px 10px 27px;
+}
+.all:checked + label:before{
+    color: #686a6b;
 }
 #foot{
     margin-top: 100px;
@@ -222,6 +226,9 @@ export default {
 }
 #bd ul li .view .status{
   display: inline-block;
+}
+input:focus{
+  outline: none;
 }
 .status + label{
     background-color: #f2f7fa;
